@@ -56,7 +56,7 @@ python demo.py --scale 1 --warp 1 --iteration 50 --gpu 1
 </table>
 
 ## Acknowledgement
-We’d love to express out appreciation to [`Jian Guo`]('https://www.roboticvision.org/rv_person/jian-edison-guo/') for the useful discussions during the course of this research.
+We’d love to express out appreciation to [`Jian Guo`](https://www.roboticvision.org/rv_person/jian-edison-guo/) for the useful discussions during the course of this research.
 
 ## Reference
 if you find our code useful for your research, please cite our paper:
