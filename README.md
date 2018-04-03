@@ -55,6 +55,8 @@ python demo.py --scale 1 --warp 1 --iteration 50 --gpu 1
 </tr>
 </table>
 
+## Acknowledgement
+We’d love to express out appreciation to [`Jian Guo`]('https://www.roboticvision.org/rv_person/jian-edison-guo/') for the useful discussions during the course of this research.
 
 ## Reference
 if you find our code useful for your research, please cite our paper:
@@ -65,5 +67,5 @@ if you find our code useful for your research, please cite our paper:
     booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
     pages={},
     year={2018}
-}
+	}
 
