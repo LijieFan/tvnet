@@ -57,4 +57,13 @@ python demo.py --scale 1 --warp 1 --iteration 50 --gpu 1
 
 
 ## Reference
+if you find our code useful for your research, please cite our paper:
+
+    @inproceedings{fan2018end,
+    title={End-to-End Learning of Motion Representation for Video Understanding},
+    author={Fan, Lijie and Huang, Wenbing and Gan, Chuang and Ermon, Stefano and Gong, Boqing and Huang, Junzhou},
+    booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    pages={},
+    year={2018}
+}
 
