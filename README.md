@@ -5,7 +5,7 @@ This repository contains implementation code for the project 'End-to-End Learnin
 ```http://lijiefan.me/project_webpage/TVNet_cvpr/index.html```
 
 ## Prerequisites
-#### tensorflow
+#### Tensorflow
 We use tensorflow (https://www.tensorflow.org) for our implementation.
 
 #### Matlab (optional)
