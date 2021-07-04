@@ -4,7 +4,15 @@ import numpy as np
 import tensorflow as tf
 import scipy.io as sio
 from tvnet import TVNet
-
+def viz_flow(flow):
+    h, w = flow.shape[:2]
+    hsv = np.zeros((h, w, 3), np.uint8)
+    mag, ang = cv2.cartToPolar(flow[...,0], flow[...,1])
+    hsv[...,0] = ang*180/np.pi/2
+    hsv[...,1] = cv2.normalize(mag,None,0,255,cv2.NORM_MINMAX)
+    hsv[...,2] = 255
+    bgr = cv2.cvtColor(hsv,cv2.COLOR_HSV2BGR)
+    return bgr
 flags = tf.app.flags
 flags.DEFINE_integer("scale", 5, " TVNet scale [3]")
 flags.DEFINE_integer("warp", 5, " TVNet warp [1]")
@@ -51,3 +59,5 @@ if not os.path.exists('result'):
     os.mkdir('result')
 res_path = os.path.join('result', 'result.mat')
 sio.savemat(res_path, {'flow': flow_mat})
+flow_bgr = viz_flow(flow_mat)
+cv2.imwrite(os.path.join('result', 'result.png'), flow_bgr)
